@@ -1,0 +1,226 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+header {
+    
+    text-align: center;
+    /*background-color: rgba(83, 47, 5, 0.534)*/
+    background: linear-gradient(rgb(4, 71, 21),rgb(255, 255, 255))
+    /*background-image: url(/img/utensilios.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;*/
+
+}
+/*.container {
+
+    margin:auto;
+    width: 150px; 
+
+} */
+nav {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    background-color: rgb(32, 4, 196);
+    padding: 5px 50px;
+    text-decoration: none; /*Tira a cor padrão da letra (AZUL)*/
+    color: #fff; /*É a cor da letra! (HOME, CONTATO, PRODUTOS)*/    
+    font-size: 15px;
+    border-radius: 8px;
+}
+nav a:hover /*muda a cor da letra quando o mouse está em cima do botão*/{
+    color:rgb(255, 255, 255);
+    background-color:rgb(6, 51, 0);
+    border: 2px solid rgb(70, 0, 0);
+    box-shadow: 20px 5px 15px rgb(2, 0, 0);
+
+} 
+
+main{
+/*padding: 30px 10px ;*/
+    margin-top: 20px;
+}
+/*PARA CHAMAR UM ID E NÃO UMA CLASS, USA-SE #, EX >>  #imgtopo*/
+.imgtopo {
+    width: 100%;
+}
+
+.textos {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.titulo {
+    font-size: 22px;
+    margin: 10px;
+    font-weight: bold;
+    text-shadow:2px 2px 5px rgb(0, 193, 252);
+}   
+
+.paragrafo {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 15px 0
+}
+
+.textos span {
+    font-weight: bold;
+}
+
+#servicos {
+    background-image: url(/img/beneficios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*opacity: 0.75;*/
+    /*height: 350px; /*precisa forçar um height para a imagem aparecer!*/
+    padding: 20px;
+}
+
+#servicos .itens {
+    margin: auto;
+    width: 500px;
+    height: 220px;
+    background-color: rgba(255, 253, 253, 0.596);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 25px;
+
+
+}
+#servicos .itens p {
+    text-align:center;
+    font-size: 22px;
+    margin: 10px;
+    font-weight: bold;
+    text-shadow:2px 2px 5px rgb(0, 193, 252);
+}
+
+
+#servicos .title-beneficios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#servicos ul  {
+    transform: scale(1.1);
+    text-align: center;
+}
+
+#servicos ul li:hover {
+    padding: 5px;
+    margin: 4px 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#horario-funcionamento {
+    margin: auto;
+}
+
+#horario-funcionamento .container {
+    padding: 30px 0px;
+    width: 500px;
+    margin: auto;
+}
+
+#horario-funcionamento table {
+    margin: auto;
+}
+
+#horario-funcionamento table th{
+    width: 130px;
+    background-color: rgb(124, 122, 122);
+    border:1px solid rgb(2, 2, 2);
+
+}
+
+#horario-funcionamento table td {
+    border:1px solid rgb(2, 2, 2);
+    text-align: center;
+    padding: 3px 0px;
+}
+
+#video { 
+    /*text-align: center; Também funciona para centralizar!*/
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/bkg-video.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    
+    
+
+}
+footer {
+    background: linear-gradient(190deg,rgb(255, 255, 255) 0%,rgba(5, 0, 0, 0.801)100%);
+
+}
+footer .container {
+    text-align: center;
+    display:flex ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .midias {
+    width: 320px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .midias a {
+    text-decoration: none;
+    transition: 0.3s ;
+    display: inline-block;
+}
+
+footer .midias a:hover {
+
+    transform: translateY(-15px);
+
+}
+
+footer .midias img {
+    width: 50px;
+}
+
+@media (max-width: 768px){
+
+    .textos {
+        width: unset;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    nav {
+        flex-direction: column;
+        width: unset;
+        text-align: center;
+    }
+    nav a {
+        margin-bottom: 10px;
+    }
+    #servicos .itens {
+        width: unset;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    #horario-funcionamento .container {
+        width: unset;
+    }
+
+}
+
+
