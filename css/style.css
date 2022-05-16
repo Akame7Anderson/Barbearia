@@ -199,7 +199,8 @@ main .produtos {
 
     display: flex;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin: 100px 0;
+    
 }
 
 .produtos .produto {
@@ -213,6 +214,15 @@ main .produtos {
 .produtos .produto:hover {
     background-color: rgba(59, 128, 85, 0.336);
     border-color: rgb(1, 59, 15);
+    cursor: pointer;
+}
+.produtos .produto:active {
+    border-color: red;
+}
+
+.produtos .produto img:hover {
+    transition: .4s;
+    transform: scale(0.9) translateY(-5px);
 }
 
 .produtos p {
@@ -227,6 +237,14 @@ main .produtos {
 
     .textos {
         width: unset;
+    }
+    .produtos {
+        flex-wrap: wrap;
+        align-content: center;
+    
+    }
+    .produto {
+        margin-top: 30px;
     }
 
 }
