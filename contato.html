@@ -39,7 +39,18 @@
 
     <main>
 
-        
+        <form action="">
+           <label for="nome">Nome</label> 
+           <input type="text" name="" id="nome" placeholder="nome" required>
+           <label for="email">Email</label>
+            <input type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" name="email" id="nome" placeholder="email">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" pattern="^[0-9/]*$" title="Digite somente números" id="telefone" placeholder="telefone">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit">ENVIAR</button>
+           
+        </form>
 
     </main>
 
