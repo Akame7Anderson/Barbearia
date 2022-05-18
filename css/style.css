@@ -47,8 +47,20 @@ main{
     margin-top: 20px;
 }
 /*PARA CHAMAR UM ID E NÃO UMA CLASS, USA-SE #, EX >>  #imgtopo*/
-.imgtopo {
-    width: 100%;
+.imgname {
+    height: 300px;
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgname h2 {
+    font-size: 45px;
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .textos {
@@ -229,7 +241,7 @@ main .produtos {
     font-weight: bold;
     font-size: 20px;
 }
-form {
+main form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,6 +249,42 @@ form {
 
 form label {
     margin-top: 15px;
+    font-weight: 600;
+}
+main form input {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+main form input:focus {
+    outline: none;
+    border-color: green;
+}
+main form textarea {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+}
+main form textarea:focus {
+    outline: none;
+    border-color: green;
+}
+main form button {
+    width: 300px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgb(32, 4, 196);
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+main form button:hover {
+    background-color: rgb(4, 71, 21);
+    color: #fff;
 }
 
 
