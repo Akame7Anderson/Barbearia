@@ -43,7 +43,7 @@
         <section>
             <div class="imgname">
 
-                <h2>Olá...</h2>
+                <h2>Olá... Clique AQUI! :)</h2>
 
             </div>
              <div class="textos">
@@ -158,7 +158,16 @@
 
 <script>
 
-    
+    const h2 = document.querySelector("h2");
+
+    h2.onclick = function () {
+        const userName = prompt("Qual é seu nome?");
+        h2.textContent = `Olá... ${userName}, Seja Bem Vindo!`
+
+        if(!userName) {
+            h2.textContent = ` Olá...User Seja Bem Vindo!`
+        }
+    }
 
 </script>  
     

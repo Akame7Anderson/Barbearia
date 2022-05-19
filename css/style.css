@@ -61,6 +61,7 @@ main{
     background-color: rgba(255, 255, 255, 0.507);
     border-radius: 5px;
     padding: 20px;
+    text-align: center;
 }
 
 .textos {
