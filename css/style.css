@@ -49,7 +49,7 @@ main{
 /*PARA CHAMAR UM ID E NÃO UMA CLASS, USA-SE #, EX >>  #imgtopo*/
 .imgname {
     height: 300px;
-    background-image: url(/img/banner.jpg);
+    background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -87,7 +87,7 @@ main{
 }
 
 #servicos {
-    background-image: url(/img/beneficios.jpg);
+    background-image: url(../img/beneficios.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /*opacity: 0.75;*/
@@ -164,7 +164,7 @@ main{
     /*text-align: center; Também funciona para centralizar!*/
     display: flex;
     justify-content: center;
-    background-image: url(/img/bkg-video.jpg);
+    background-image: url(../img/bkg-video.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
